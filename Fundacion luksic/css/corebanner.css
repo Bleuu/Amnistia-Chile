@@ -1,0 +1,24 @@
+
+	.big_banner #corebanner_ctrl{
+		height:24px;
+		display:block;
+		padding:0 8px;
+		margin:0;
+		list-style:none;
+		position:absolute;
+		bottom:10px;
+		left:365px;
+	}
+		.big_banner #corebanner_ctrl li{
+			display:block;
+			float:left;
+			width:20px;
+			height:20px;
+			background:url(../img/btns_core.png) no-repeat left center transparent;
+			padding:0;
+			margin:5px 6px 0;
+			cursor:pointer;
+		}
+		.big_banner #corebanner_ctrl li.current{
+			background-position:right center;
+		}
