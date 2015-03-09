@@ -1,0 +1,95 @@
+.rounded(@radius: 6px){
+    -webkit-border-radius: @radius;
+    -moz-border-radius: @radius;
+    border-radius: @radius;
+}
+@anchoDef: 18px;
+
+#resumen{
+    font-size: 12px;
+    line-height: 1;
+    ol{
+        list-style: none;
+        margin: 0;
+        padding: 0;
+    }
+    li{
+        overflow: hidden;
+        position: relative;
+        > div{
+            display: block;
+            float: left;
+            min-height: 25px;
+            padding-right: 80px;
+            padding-left: 5px;
+            width: 100%;
+            background: #F7F7F7;
+            cursor: pointer;
+            border-top: 1px solid #ddd;
+            border-bottom: 1px solid #ddd;
+            > span{
+                display: block;
+                float: left;
+                margin-bottom: 10px;
+            }
+        }
+    }
+    img{
+        width: auto;
+        height: @anchoDef;
+        position: relative;
+        top: 6px;
+        height: 25px;
+        left: 6px;
+        vertical-align: bottom;
+    }
+    .recorrido{
+        margin-left: -22px;
+        padding: 6px 0 7px 0;
+        .rounded(4px);
+        span{
+            padding: 6px 4px 7px 25px !important;
+            color: white !important;
+        }
+    }
+    .metro{
+        padding: 5px 7px !important;
+        .rounded(4px);
+        margin-left: 6px;
+        color: white;
+        &.ml1{ background-color: #F20726; }
+        &.ml2{ background-color: #F27000; }
+        &.ml4{ background-color: #1A1D6A; }
+        &.ml4a{ background-color: #0A5FCA; }
+        &.ml5{ background-color: #008A63; }
+    }
+    .gm-arrow{
+        width: 16px;
+        height: @anchoDef;
+        background: url(../img/icon/r_flecha.png) no-repeat center center transparent !important;
+    }
+    .adp-summary-duration{
+        padding: 0;
+        height: 20px;
+        position: absolute;
+        top: 14px;
+        right: 5px;
+        line-height: 20px;
+        min-height: 0;
+        background: url(../img/clock.png) no-repeat left center transparent;
+        font-weight: bold;
+        border: none !important;
+        padding: 0;
+        width: 70px;
+        text-align: right;
+    }
+    .adp-listheader{
+        padding: 0;
+        margin-bottom: 4px;
+        font-weight: bold;
+        font-size: 14px;
+    }
+    .estimado{
+        display: none;
+    }
+}
