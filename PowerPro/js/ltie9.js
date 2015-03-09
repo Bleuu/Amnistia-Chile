@@ -1,0 +1,3 @@
+jQuery(document).ready(function($){
+    $('body').prepend('<div id="no_html5">Necesitas actualizar tu navegador para tener una mejor experiencia. <a href="http://windows.microsoft.com/es-cl/internet-explorer/ie-9-worldwide-languages" title="Descargar Navegador" target="_blank">IExplorer 9</a> o superior, <a href="http://www.google.cl/intl/es-419/chrome/" title="Descargar navegador" target="_blank">Chrome</a>, <a href="https://www.mozilla.org/es-CL/firefox/new/" title="Descargar navegador" target="_blank">Firefox</a> entre otros.</div>');
+});

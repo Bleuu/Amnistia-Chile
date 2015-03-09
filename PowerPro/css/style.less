@@ -1,0 +1,312 @@
+@cl_lnk : #999;
+@cl_but_back : #fff;
+@cl_lnk_hov : #404040;
+@cl_brdr : #ccc;
+@cl_tit_sm : #818484;
+@cl_txt : #000;
+@cl_hov_menu : #ffcc00;
+@cl_menu : #333333;
+@cl_tit : #ff0000;
+@cl_bck : #000;
+@cl_men_tp : #999;
+
+.transition{
+    -webkit-transition: all 300ms;
+    -moz-transition: all 300ms;
+    -ms-transition: all 300ms;
+    -o-transition: all 300ms;
+    transition: all 300ms;
+}
+body{
+    background: @cl_bck;
+}
+
+a{
+    color: @cl_txt;
+    &:hover{
+        color: @cl_lnk_hov;
+    }
+}
+
+header{
+    a{
+        color: @cl_lnk_hov;
+        
+        &:hover{
+            color: @cl_lnk;
+        }
+    }
+    .menu_top{
+        h1, .logo{
+            img{
+                margin-top: (90px - 44) / 2;
+            }
+        }
+        
+        .menu_der_top{
+            li{
+                &.sep{
+                    background: @cl_but_back;
+                }
+                a{
+                    color: @cl_men_tp;
+                    
+                    &:hover{
+                        color: @cl_hov_menu;
+                    }
+                }
+            }
+        }
+    }
+    
+    nav{
+        .barra_sup{
+            background: rgba(51, 51, 51, 0.6);
+            .tit{
+                color: @cl_but_back;
+                font-weight: bold;
+            }
+            .buscar{
+                input[type="text"]{
+                    border-color: @cl_lnk;
+                    color: @cl_but_back;
+                    &:focus{
+                        background: rgba(0, 0, 0, 0.6);
+                    }
+                }
+            }
+        }
+        
+        .menu{
+            background: rgba(51, 51, 51, 0.8);
+            
+            li{
+                &.active, &:hover{
+                    background: @cl_hov_menu;
+                    a{
+                        color: @cl_txt;                        
+                    }
+                }
+                a{
+                    color: @cl_but_back;
+                    padding: 0 24px;
+                }
+            }
+            
+            .dropdown{
+                background: @cl_menu;
+                li{
+                    border-bottom: 1px solid @cl_brdr;
+                    
+                    &:last-child{
+                        border: none;
+                    }
+                    a{
+                        color: @cl_tit_sm;
+                        
+                    }
+                    &.active, &:hover{
+                        background: @cl_menu;
+                        a{
+                            color: @cl_but_back;
+                        }
+                    }
+                    a{
+                        padding: 8px 0;
+                    }
+                }
+            }
+        }
+    }
+}
+
+.content{
+    .inside{
+        background: @cl_but_back;
+    }
+    
+    .banner{
+        max-height: 180px;
+        width: 100%;
+        max-width: 960px;
+        margin: auto;
+        z-index: 10;
+    }
+    
+//    INDEX
+    .img_ban{
+        opacity: 1;
+    }
+    .bot_box{
+        .video_box{
+            .c, .c:before, .tri_box:before{
+                background: @cl_hov_menu;
+                p{
+                    color: @cl_txt;
+                }
+            }
+            
+            &.two{
+                .c, .c:before, .tri_box:before{
+                    background: @cl_but_back;
+                }
+            }
+        }
+    }
+//    TERMINA INDEX
+    
+//    SINGLE PRODUCTO
+    .sbar{
+        ul{
+            li{
+                a{
+                    color: @cl_lnk;
+                }
+                &:hover, &.active{
+                    a{
+                        color: @cl_tit;
+                    }
+                }
+            }
+        }
+    }
+    .bcrumb{
+        color: @cl_lnk;
+        p{
+            a{
+                color: @cl_lnk;
+            }
+        }
+    }
+    .desc{
+        border-left: 2px solid @cl_brdr;
+    }
+    .left{
+        h1{
+            color: @cl_tit;
+            span{
+               color:  @cl_txt;
+            }
+        }
+        h2{
+            color: @cl_txt;
+        }
+        .documentos{
+            h3{
+                color: @cl_tit_sm;
+            }
+            ul{
+                li{
+                    a{
+                        border: 1px solid @cl_brdr;
+                        
+                    }
+                }
+            }
+        }
+    }
+    .related{
+        ul{
+            li{
+                a{
+                    color: @cl_txt;
+                }
+                &:hover{
+                    a{
+                        color: @cl_lnk_hov;
+                    }
+                }
+            }
+        }
+    }
+    .btn_red{
+        background: url(../img/btn_red.png) left top repeat-x;
+        color: @cl_but_back;
+    }
+//    TERMINA SINGLE PRODUCTO
+//    SERVICIO TECNICO
+    .paginator{
+        border-top: 1px solid @cl_brdr;
+        border-bottom: 1px solid @cl_brdr;
+        li{
+            a:hover{
+                background: @cl_brdr;
+            }
+            a.active{
+                background: @cl_hov_menu;
+                color: @cl_lnk_hov;
+            }
+        }
+    }
+    .list{
+        li{
+            a.btn{
+                background: @cl_hov_menu;
+            }
+        }
+    }
+//    TERMINA SERVICIO TECNICO
+//    CONTACTO
+    form{
+        h2{
+            background: @cl_brdr;
+        }
+        .left{
+            label{
+                span{
+                    color: @cl_tit;
+                }
+            }
+        }
+        .right{
+            .con_capt{
+                .captcha{
+                    background: @cl_lnk_hov;
+                }
+                a.update{
+                    background-color: @cl_tit;
+                    border-bottom: 5px solid #af0000;
+                }
+            }
+            .line{
+                span{
+                    color: @cl_tit;
+                }
+            }
+            .send{
+                p{
+                    color: #cca514;
+                }
+                input{
+                    background: @cl_lnk_hov;
+                    color: @cl_but_back;
+                }
+            }
+        }
+    }
+//    TERMINA CONTACTO
+}
+
+footer{
+    background: @cl_menu;
+    a, p{
+        color: @cl_but_back;
+    }
+    a:hover{
+        color: @cl_but_back;
+        text-decoration: underline;
+    }
+}
+
+.menu_404{
+    li{
+        a{
+            color: @cl_menu;
+            text-decoration: none;
+            
+            &:hover{
+                color: @cl_tit;
+            }
+        }
+    }
+}
