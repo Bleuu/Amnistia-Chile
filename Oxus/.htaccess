@@ -1,0 +1,28 @@
+<Files .htaccess>
+    order allow,deny
+    deny from all
+</Files>
+
+Options +FollowSymlinks
+RewriteEngine on
+
+# Si hay algo que ignorar dentro de la redirección se pondria aca
+#RewriteRule ^(phpMyAdmin|api|index.php) - [L]
+
+# Agrega .php si no existe archivo pero si existe archivo.php
+RewriteCond %{SCRIPT_FILENAME} !-f
+RewriteCond %{SCRIPT_FILENAME} !-d
+RewriteCond %{SCRIPT_FILENAME}\.php -f
+RewriteRule ^(.*) $1\.php [QSA,L]
+
+# Si existe archivo, lo muestra
+RewriteCond %{SCRIPT_FILENAME} -f
+RewriteRule ^(.*) - [QSA,L]
+
+# Si es directorio y contiene un index.php, lo muestra
+RewriteCond %{SCRIPT_FILENAME} -d
+RewriteCond %{SCRIPT_FILENAME}\/index\.php -f
+RewriteRule ^(.*) - [QSA,L]
+
+# Muestra error 404 (404.php en el home del sitio)
+RewriteRule ^(.*) 404.php [QSA,L]
