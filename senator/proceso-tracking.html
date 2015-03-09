@@ -1,0 +1,166 @@
+<script src="/js/transfer-tracking.js"></script>
+<section>
+    <div class="wrap">
+        <h1 class="headline home">
+            PROCESO BÚSQUEDA
+        </h1>
+        <div class="content">
+            <p>
+                Select cambia las opciones de busqueda para filtrar
+            </p>
+            <div class="itinerarios">
+                <div class="mapa_mundi"></div>
+                <div class="itinerario_form">
+                    <form action="" class="">
+                        <div class="cols one">
+                            <label>Método de Búsqueda :</label>
+                            <div class="style_select">
+                                <select name="puerto" id="puerto">
+                                    <option value="por_fecha">Por fecha</option>
+                                    <option value="numero_bl">Número de BL</option>
+                                    <option value="numero_contenedor">Número de Contenedor</option>
+                                    <option value="numero_embarque">Número de Embarque</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="cols three">
+                            <label for="datepicker">Fecha de salida</label>
+                            <input type="text" class="datepicker" placeholder="Fecha apróximada de salida">
+                            <p class="pick_one"></p>
+                        </div>
+                        <div class="cols three">
+                            <label for="datepicker">Fecha de llegada</label>
+                            <input type="text" class="datepicker" placeholder="Fecha apróximada de salida">
+                            <p class="pick_one"></p>
+                        </div>
+                        <div class="cols four">
+                            <input type="submit" class="send" value="BUSCAR">
+                        </div>
+                    </form>
+                </div>
+                <div class="itinerario_form">
+                    <form action="" class="">
+                        <div class="cols one">
+                            <label>Método de Búsqueda :</label>
+                            <div class="style_select">
+                                <select name="puerto" id="puerto">
+                                    <option value="por_fecha">Número de BL</option>
+                                    <option value="numero_bl">Por Fecha</option>
+                                    <option value="numero_contenedor">Número de Contenedor</option>
+                                    <option value="numero_embarque">Número de Embarque</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="cols two">
+                            <label for="datepicker">Ingrese número de bl:</label>
+                            <input type="text" name="bl"><br>
+                        </div>
+                        <div class="cols four">
+                            <input type="submit" class="send" value="BUSCAR">
+                        </div>
+                    </form>
+                </div>
+                    <div class="itinerario_form">
+                    <form action="" class="">
+                        <div class="cols one">
+                            <label>Método de Búsqueda :</label>
+                            <div class="style_select">
+                                <select name="puerto" id="puerto">
+                                    <option value="por_fecha">Número de Contenedor</option>
+                                    <option value="numero_bl">Por Fecha</option>
+                                    <option value="numero_contenedor">Número de BL</option>
+                                    <option value="numero_embarque">Número de Embarque</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="cols two">
+                            <label for="datepicker">Ingrese número de Contenedor:</label>
+                            <input type="text" name="bl"><br>
+                        </div>
+                        <div class="cols four">
+                            <input type="submit" class="send" value="BUSCAR">
+                        </div>
+                    </form>
+                </div>
+                    <div class="itinerario_form">
+                    <form action="" class="">
+                        <div class="cols one">
+                            <label>Método de Búsqueda :</label>
+                            <div class="style_select">
+                                <select name="puerto" id="puerto">
+                                    <option value="por_fecha">Número de Embarque</option>
+                                    <option value="numero_bl">Por Fecha</option>
+                                    <option value="numero_contenedor">Número de BL</option>
+                                    <option value="numero_embarque">Número de Contenedor</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="cols two">
+                            <label for="datepicker">Ingrese número de Embarque:</label>
+                            <input type="text" name="bl"><br>
+                        </div>
+                        <div class="cols four">
+                            <input type="submit" class="send" value="BUSCAR">
+                        </div>
+                    </form>
+                </div>
+                <p class="no-items">
+                    <em>No se encontraron resultados. Realiza una nueva búsqueda.</em>
+                </p>
+                <h2 class="headline home">
+                    ÚLTIMO MOVIMIENTO
+                </h2>
+                <div class="cont_toggle">
+                    <div id="cont_barra">
+                        <ul class="barra">
+                            <li class="btn_toggle"><img src="img/dpdownicon.png">
+                            </li>
+                            <li><span>Lorem</span><strong>Destino:</strong></li>
+                            <li><span>Lorem</span><strong>Órden :</strong></li>
+                            <li><span>Lorem</span><strong>ETD :</strong></li>
+                            <li><span>Lorem</span><strong>ETA :</strong></li>
+                            <li><a href="#">Ver Ficha</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <!-- Los span llevan el resultado y los strong los titulos, estan al revés porque flotan hacia la derecha -->
+                    <div class="toggle">
+                        <ul class="first_ul">
+                            <li><span>Lorem Ipsum is simply dummy.</span><strong>ETD :</strong>
+                            </li>
+                            <li><span>Lorem Ipsum is simply dummy.</span><strong>Orden Cliente :</strong> 
+                            </li>
+                            <li><span>Lorem Ipsum is simply dummy.</span><strong>Consignatario :</strong>
+                            </li>
+                            <li> <span>Lorem Ipsum is simply dummy.</span><strong>Transportista :</strong>
+                            </li>
+                            <li> <span>Lorem Ipsum is simply dummy.</span><strong>Agentes :</strong>
+                            </li>
+                            <li> <span>Lorem Ipsum is simply dummy.</span><strong>Embarcador :</strong>
+                            </li>
+                        </ul>
+                        <ul>
+                            <li><span>Lorem Ipsum is simply dummy.</span><strong>ETA :</strong>
+                            </li>
+                            <li><span>Lorem Ipsum is simply dummy.</span><strong>Master :</strong> 
+                            </li>
+                        </ul>
+                        <ul>
+                            <li><span>Lorem Ipsum is simply dummy.</span><strong>Origen :</strong>
+                            </li>
+                        </ul>
+                        <ul>
+                            <li><span>Lorem Ipsum is simply dummy.</span><strong>Destino :</strong>
+                            </li>
+                            <li><span>Lorem Ipsum is simply dummy.</span><strong>Posición :</strong> 
+                            </li>
+                        </ul>
+                        <div class="ver_ficha">
+                            <a href="#">Ver ficha Completa...</a>     
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>

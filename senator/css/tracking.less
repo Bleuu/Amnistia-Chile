@@ -1,0 +1,48 @@
+/*Colores*/
+@negro: #222;
+@gris: #444;
+@gris-claro: #EEEEEE;
+@rojo: #BE1917;
+@azul: #004A99;
+@azul-oscuro: #00346F;
+@azul-gris: #1B5A8D;
+.fleft{
+    float: left;
+}
+.fright{
+    float: right;
+}
+
+/* Clases */
+.seudo-clear{
+    float: none;
+    clear: both;
+    display: block;
+    content: " ";
+}
+.clear{
+    float: none;
+    clear: both;
+    display: block;
+
+}
+.font{
+    font-family: 'Open Sans', helvetica, arial, sans-serif;
+}
+.border-box{
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+.border-radius(@radius:6px){
+    -webkit-border-radius: @arguments;
+    -moz-border-radius: @arguments;
+    -ms-border-radius: @arguments;
+    -o-border-radius: @arguments;
+    border-radius: @arguments;
+}
+
+/* TRACKING */
+header{
+    background: @azul;
+}

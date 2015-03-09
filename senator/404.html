@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>Senator</title>
+        <link href='http://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,400,300,600,700' rel='stylesheet' type='text/css'>
+        <link rel="apple-touch-icon" sizes="57x57" href="/ico/apple-touch-icon-57x57.png">
+        <link rel="apple-touch-icon" sizes="60x60" href="/ico/apple-touch-icon-60x60.png">
+        <link rel="icon" type="image/png" href="/ico/favicon-16x16.png" sizes="16x16">
+        <link rel="icon" type="image/png" href="/ico/favicon-32x32.png" sizes="32x32">
+        <meta name="msapplication-TileColor" content="#004a99">
+        <script>
+            $(function() {
+                $( ".datepicker" ).datepicker();
+            });
+        </script>
+        <style type="text/css">
+            body, html{
+                background: #004A99;
+                color: white;
+                font-family: 'Open Sans', Arial, Helvetica, sans-serif;
+                font-size: 14px;
+                line-height: 20px;
+                margin: 0;
+            }
+            a{
+                color: white;
+            }
+            a:hover{
+                color: #ccc;
+            }
+            a img{
+                border: 0;
+            }
+            h1{
+                font-size: 48px;
+            }
+            .left{
+                margin-left: 5%;
+                text-align: left;
+                padding-right: 5%;
+                float: left;
+                width: 40%;
+                border-right: 1px solid #336EAD;
+            }
+            .right{
+                text-align: left;
+/*                margin-right: 5%;*/
+                padding-left: 5%;
+                float: left;
+                width: 40%;
+
+            }
+            .senator{
+                margin: 25px auto 80PX;
+                display: block;
+            }
+            .mapa_mundi{
+                height: 35px;
+                width: 100%;
+                min-width: 980px;
+                background: url(/img/header-back.png) no-repeat center top #00346f;
+                position: absolute;
+                left: 0;
+                top: 30px;
+                padding-bottom: 80px;
+                border-bottom: 1px solid #1B5A8D;
+            }
+            hr{
+                margin: 25px 0;
+                background: transparent;
+                border: 0;
+                border-top: 1px solid #336EAD;
+                display: block;
+                float: none;
+                clear: both;
+            }
+            #franja_sup{
+                height: 30px;
+                background: #222;
+                width: 100%;
+            }
+            #franja_inf{
+                height: 30px;
+                width: 100%;
+                background: #00346f;
+                position: fixed;
+                bottom: 0;
+                left: 0;
+                z-index: 5;
+            }
+            .msg{
+                font-size: 28px;
+                font-weight: 300;
+                font-style: italic;
+                line-height: 1;
+            }
+            .small{
+                font-size: 18px;
+            }
+            .contenido{
+                width: 980px;
+                margin: auto;
+                position: relative;
+                z-index: 1;
+            }
+        </style>
+        <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+        <!--[if lt IE 9]>
+<script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+<script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+<![endif]-->
+    </head>
+    <body>
+        <div id="franja_sup"></div>
+        <div class="contenido">
+            <a href="#" title="Volver al inicio"><img src="/img/logo.png" alt="Senator International Logo" class="senator"></a>
+            <div class="left">
+                <h1>ERROR 404</h1>
+                <p><strong>Hemos tenido un error. Puede que hayas ingresado a una página que ya no existe.</strong></p>
+                <p><a href="::::::::::::::::::::URL DE PAGINA:::::::::::::::::::" title="Ir al inicio">Regresa al inicio</a> e intenta nuevamente</p>
+            </div>
+            <div class="right">
+                <p class="msg">
+                    First Class Global Logistics<br/>
+                    <span class="small">Expo-Reefer</span>
+                </p>
+                <p><a href="::::::::::::::::::::URL DE PAGINA:::::::::::::::::::" title="Ir al inicio">http://www.senator.cl</a></p>
+            </div>
+        </div>
+        <div class="mapa_mundi"></div>
+        <div id="franja_inf"></div>
+    </body>
+</html>

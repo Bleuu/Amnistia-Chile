@@ -1,0 +1,62 @@
+.blockHeader{
+    background:#283036;
+    padding:4px 0;
+    color:#fff;
+    font-size:16px;
+}
+.blockFooter{
+    background:#DFE6EA;
+    margin-top:10px;
+    padding:6px 0;
+    display:block;
+    border-top:1px solid #999;
+    border-bottom:1px solid #fff;
+    color:#333;
+    font-size:14px;
+    float:left;
+    width:100%;
+}
+.blockFooter a{
+    color:#000;
+    text-decoration:underline;
+}
+.blockFooter p{
+    margin: 0;
+}
+.blockFooter a:hover{
+    color:#f60;
+}
+table{
+    width: 100%;
+    border-collapse: collapse;
+}
+table td,
+table th{
+    border: 1px solid #B8C6CF;
+    padding: 10px 5px;
+    text-align: center;
+}
+table th{
+    background: #DFE6EA;
+    font-weight: bold;
+    font-size: 12px;
+}
+table td{
+    background: url(/getup/img/layout/content/table_td.png) repeat-x left bottom transparent;
+}
+table img{
+    vertical-align: middle;
+
+    max-width: 300px;
+    max-height: 200px;
+    height: auto !important;
+    width: auto !important;
+}
+table .msgStates strong,
+table .msgStates span{
+    height: 24px;
+    vertical-align: middle;
+}
+table .msgStates img{
+    vertical-align: middle;
+}
