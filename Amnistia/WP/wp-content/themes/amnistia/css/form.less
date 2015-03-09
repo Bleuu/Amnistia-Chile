@@ -1,0 +1,362 @@
+/*VARIABLES*/
+    /*bordes redondeados*/
+        .rounded (@radius: 5px) {
+            -webkit-border-radius: @radius;
+            -moz-border-radius: @radius;
+            -ms-border-radius: @radius;
+            -o-border-radius: @radius;
+            border-radius: @radius;
+        }
+        .roundedT (@radius: 5px) {
+            -webkit-border-radius: @radius @radius 0 0;
+            -moz-border-radius: @radius @radius 0 0;
+            -ms-border-radius: @radius @radius 0 0;
+            -o-border-radius: @radius @radius 0 0;
+            border-radius: @radius @radius 0 0;
+        }
+        .roundedB (@radius: 5px) {
+            -webkit-border-radius: 0 0 @radius @radius;
+            -moz-border-radius: 0 0 @radius @radius;
+            -ms-border-radius: 0 0 @radius @radius;
+            -o-border-radius: 0 0 @radius @radius;
+            border-radius: 0 0 @radius @radius;
+        }
+        .roundedLT (@radius: 5px) {
+            -webkit-border-radius: @radius 0 0 0;
+            -moz-border-radius: @radius 0 0 0;
+            -ms-border-radius: @radius 0 0 0;
+            -o-border-radius: @radius 0 0 0;
+            border-radius: @radius 0 0 0;
+        }
+        .roundedRT (@radius: 5px) {
+            -webkit-border-radius: 0 @radius 0 0;
+            -moz-border-radius: 0 @radius 0 0;
+            -ms-border-radius: 0 @radius 0 0;
+            -o-border-radius: 0 @radius 0 0;
+            border-radius: 0 @radius 0 0;
+        }
+        .roundedLB (@radius: 5px) {
+            -webkit-border-radius: 0 0 0 @radius;
+            -moz-border-radius: 0 0 0 @radius;
+            -ms-border-radius: 0 0 0 @radius;
+            -o-border-radius: 0 0 0 @radius;
+            border-radius: 0 0 0 @radius;
+        }
+        .roundedRB (@radius: 5px) {
+            -webkit-border-radius: 0 0 @radius 0;
+            -moz-border-radius: 0 0 @radius 0;
+            -ms-border-radius: 0 0 @radius 0;
+            -o-border-radius: 0 0 @radius 0;
+            border-radius: 0 0 @radius 0;
+        }
+    /*box shadow inset*/
+        .shadowInset (@colorShadow: rgba(54, 169, 225, 0.2)) {
+            box-shadow: inset 2px 2px 2px 0px @colorShadow;
+            -moz-box-shadow: inset 2px 2px 2px 0px @colorShadow;
+            -webkit-box-shadow: inset 2px 2px 2px 0px @colorShadow;
+        }
+    /*box sizing*/
+        .boxSize (@bsize: border-box) {
+            box-sizing: @bsize;
+            -moz-box-sizing: @bsize;
+            -webkit-box-sizing: @bsize;
+        }
+    /*flotar - posicion - alineaciones*/
+        .float (@float: left) {
+            float: @float;
+        }
+        .relative (@zindexr: 1) {
+            position: relative;
+            z-index: @zindexr;
+        }
+        .absolute (@zindex: 1) {
+            position: absolute;
+            z-index: @zindex;
+        }
+        .aLeft() {
+            text-align: left;
+        }
+        .aCenter() {
+            text-align: center;
+        }
+        .aRight() {
+            text-align: right;
+        }
+    /*mostrar/ocultar*/
+        .block() {
+            display: block;
+        }
+        .none() {
+            display: none;
+        }
+    /*anchos*/
+        .full() {
+            width: 100%;
+        }
+    /*fuente*/
+        .bold(@bold: bold) {
+            font-weight: @bold;
+        }
+        .italic(@italic: italic) {
+            font-style: @italic;
+        }
+        .deco() {
+            text-decoration: underline;
+        }
+        .nodeco() {
+            text-decoration: none;
+        }
+
+
+//MENSAJES DE EXITO Y ERROR
+    .msgDone {
+        height: 28px;
+        display: block;
+        background: #ECF9D2;
+        line-height: 28px;
+        text-align: center;
+        font-size: 14px;
+        color: #690;
+        margin-bottom: 15px;
+    }
+    .msgError {
+        height: 28px;
+        display: block;
+        background: #FFE8DF;
+        line-height: 28px;
+        text-align: center;
+        font-size: 14px;
+        color: #d00;
+        margin-bottom: 15px;
+    }
+
+/*FORMULARIOS*/
+    .contactForm {
+        padding: 0 30px;
+        margin-top: 30px;
+        float: left;
+        
+        .line {
+            width: 100%;
+            min-height: 30px;
+            float: left;
+            margin-bottom: 15px;
+            
+            &.center{
+                width: 100%;
+                margin: auto;
+                float: none;
+                
+                label{
+                    text-align: left;
+                    display: inline-block;
+                    width: auto !important;
+                }
+                
+                .radioLine{
+                    margin-left: 26% !important;
+                }
+            }
+            
+            label{
+                display: block;
+                float: left;
+                line-height: 28px;
+                width: 100%;
+            }
+            
+            input[type="text"], input[type="email"], input[type="number"], input[type="tel"], input[type="datetime"], select{
+                width: 100% !important;
+                
+                box-sizing: border-box;
+                
+                &.xLarge{
+                    width: 75% !important;
+                }
+                
+                &.xSmall{
+                    width: 15% !important;
+                }
+                
+                option{
+                    color: #555;
+                }
+            }
+            
+            &.center {
+                .aCenter;
+            }
+            &.margin_sumbit {
+                margin-top: 10px;
+                
+               
+            }
+            .halfLine {
+                width: 48%;
+                float: left;
+            }
+            &.limited_height {
+                max-height: 50px;
+            }
+            .thirdLine_plus {
+                width: 62%;
+                float: left;
+                margin-right: 3.5%;
+            }
+            .thirdLine {
+                width: 31%;
+                float: left;
+                margin-right: 3.5%;
+                
+                &.new{
+                    display: block;
+                    clear: both;
+                    width: 100%;
+                    box-sizing: border-box;
+                    padding-left: 26%;
+                    
+                    label{
+                        width: auto !important;
+                        display: inline-block;
+                    }
+                    
+                    input[type="number"]{
+                        width: 21% !important;
+                    }
+                }
+            }
+            .quarterLine {
+                width: 22%;
+                float: left;
+                margin-right: 4%;
+            }
+            
+            .guion {
+                width: 10%;
+                line-height: 28px;
+                float: left;
+                .aCenter;
+            }
+        }
+        .error {
+            .relative;
+            .errorBubble {
+                width: 30px;
+                height: 24px;
+                .absolute;
+                right: 3px;
+                bottom: 3px;
+                background: url(../img/alert_error.png) no-repeat;
+            }
+        }
+        &.inlineForm {            
+            .line {
+                
+                &.strict {
+                    
+                    label {
+                        width: 20%;
+                        .aRight;
+                    }
+                    
+                    input[type="text"], input[type="email"], input[type="number"], input[type="tel"], input[type="datetime"], select, textarea{
+                        width: 76% !important;
+                        box-sizing: border-box;
+                    }
+                }
+            }
+            .two_row {
+                line-height: 16px;   
+            }
+        }
+    }
+
+
+
+//CAMBIAR ESTILO CHECKBOX
+    .checkboxLine {
+        width: 100%;
+        //height: 29px;
+        float: left;
+        position: relative;
+        padding-left: 32px;
+        line-height: 29px;
+        font-size: 13px;
+        
+        .checkbox {
+            width: 18px; //ancho de checkbox
+            height: 18px; //alto de checkbox
+            float: left;
+            position: absolute;
+            left: 0px;
+            top: 0px;
+            z-index: 2;
+            background: url(../img/checkbox.png) left top no-repeat; //imagen NO marcado
+            margin-right: 7px;
+            cursor: pointer;
+            
+            &.check {
+                background: url(../img/checkbox.png) right top no-repeat; //imagen marcado
+            }
+        }
+    }
+    .margin_form {
+        margin-left: 130px;
+    }
+       
+    .for_checkbox {
+        padding-left: 26px;
+        color: #949798;
+        
+        a {
+            color: #004684;
+        }
+    }
+//CAMBIAR ESTILO RADIO
+    .radioLine {
+        height: 22px;
+        float: left;
+        position: relative;
+        margin: 6px 0 0;
+        padding-left: 26px;
+        line-height: 22px;
+        font-size: 13px;
+        clear: both;
+        
+        .radio {
+            width: 16px; //ancho de checkbox
+            height: 16px; //alto de checkbox
+            float: left;
+            position: absolute;
+            left: 0px;
+            top: 0px;
+            z-index: 2;
+            background: url(../img/radio.png) left top no-repeat; //imagen NO marcado
+            margin-right: 7px;
+            cursor: pointer;
+            
+            &.radioCheck {
+                background: url(../img/radio.png) right top no-repeat; //imagen marcado
+            }
+        }
+    }
+
+//ALINEACIÓN DE FORMA AL CENTRO
+    .center {
+        margin: 0 auto;
+        clear: both;
+        display: block;
+        text-align: center; // IE
+    }
+    
+//TRABAJA CON NOSOTROS
+    .wpcf7{
+        P{
+            display: block;
+            overflow: hidden;
+            
+            img{
+                margin: 0;
+            }
+        }
+    }

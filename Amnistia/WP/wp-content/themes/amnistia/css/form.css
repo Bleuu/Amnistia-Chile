@@ -1,0 +1,27 @@
+.msgDone{height:28px;display:block;background:#ECF9D2;line-height:28px;text-align:center;font-size:14px;color:#690;margin-bottom:15px;}
+.msgError{height:28px;display:block;background:#FFE8DF;line-height:28px;text-align:center;font-size:14px;color:#d00;margin-bottom:15px;}
+.contactForm{padding:0 30px;margin-top:30px;float:left;}.contactForm .line{width:100%;min-height:30px;float:left;margin-bottom:15px;}.contactForm .line.center{width:100%;margin:auto;float:none;}.contactForm .line.center label{text-align:left;display:inline-block;width:auto !important;}
+.contactForm .line.center .radioLine{margin-left:26% !important;}
+.contactForm .line label{display:block;float:left;line-height:28px;width:100%;}
+.contactForm .line input[type="text"],.contactForm .line input[type="email"],.contactForm .line input[type="number"],.contactForm .line input[type="tel"],.contactForm .line input[type="datetime"],.contactForm .line select{width:100% !important;box-sizing:border-box;}.contactForm .line input[type="text"].xLarge,.contactForm .line input[type="email"].xLarge,.contactForm .line input[type="number"].xLarge,.contactForm .line input[type="tel"].xLarge,.contactForm .line input[type="datetime"].xLarge,.contactForm .line select.xLarge{width:75% !important;}
+.contactForm .line input[type="text"].xSmall,.contactForm .line input[type="email"].xSmall,.contactForm .line input[type="number"].xSmall,.contactForm .line input[type="tel"].xSmall,.contactForm .line input[type="datetime"].xSmall,.contactForm .line select.xSmall{width:15% !important;}
+.contactForm .line input[type="text"] option,.contactForm .line input[type="email"] option,.contactForm .line input[type="number"] option,.contactForm .line input[type="tel"] option,.contactForm .line input[type="datetime"] option,.contactForm .line select option{color:#555;}
+.contactForm .line.center{text-align:center;}
+.contactForm .line.margin_sumbit{margin-top:10px;}
+.contactForm .line .halfLine{width:48%;float:left;}
+.contactForm .line.limited_height{max-height:50px;}
+.contactForm .line .thirdLine_plus{width:62%;float:left;margin-right:3.5%;}
+.contactForm .line .thirdLine{width:31%;float:left;margin-right:3.5%;}.contactForm .line .thirdLine.new{display:block;clear:both;width:100%;box-sizing:border-box;padding-left:26%;}.contactForm .line .thirdLine.new label{width:auto !important;display:inline-block;}
+.contactForm .line .thirdLine.new input[type="number"], .number{max-width:21% !important;}
+.contactForm .line .quarterLine{width:22%;float:left;margin-right:4%;}
+.contactForm .line .guion{width:10%;line-height:28px;float:left;text-align:center;}
+.contactForm .error{position:relative;z-index:1;}.contactForm .error .errorBubble{width:30px;height:24px;position:absolute;z-index:1;right:3px;bottom:3px;background:url(../img/alert_error.png) no-repeat;}
+.contactForm.inlineForm .line.strict label{width:20%;text-align:right;}
+.contactForm.inlineForm .line.strict input[type="text"],.contactForm.inlineForm .line.strict input[type="email"],.contactForm.inlineForm .line.strict input[type="number"],.contactForm.inlineForm .line.strict input[type="tel"],.contactForm.inlineForm .line.strict input[type="datetime"],.contactForm.inlineForm .line.strict select,.contactForm.inlineForm .line.strict textarea{width:76% !important;box-sizing:border-box;}
+.contactForm.inlineForm .two_row{line-height:16px;}
+.checkboxLine{width:100%;float:left;position:relative;padding-left:32px;line-height:29px;font-size:13px;}.checkboxLine .checkbox{width:18px;height:18px;float:left;position:absolute;left:0px;top:0px;z-index:2;background:url(../img/checkbox.png) left top no-repeat;margin-right:7px;cursor:pointer;}.checkboxLine .checkbox.check{background:url(../img/checkbox.png) right top no-repeat;}
+.margin_form{margin-left:130px;}
+.for_checkbox{padding-left:26px;color:#949798;}.for_checkbox a{color:#004684;}
+.radioLine{height:22px;float:left;position:relative;margin:6px 0 0;padding-left:26px;line-height:22px;font-size:13px;clear:both;}.radioLine .radio{width:16px;height:16px;float:left;position:absolute;left:0px;top:0px;z-index:2;background:url(../img/radio.png) left top no-repeat;margin-right:7px;cursor:pointer;}.radioLine .radio.radioCheck{background:url(../img/radio.png) right top no-repeat;}
+.center{margin:0 auto;clear:both;display:block;text-align:center;}
+.wpcf7 P{display:block;overflow:hidden;}.wpcf7 P img{margin:0;}

@@ -1,0 +1,35 @@
+.msgDone{height:28px;display:block;background:#ECF9D2;line-height:28px;text-align:center;font-size:14px;color:#690;margin-bottom:15px;}
+.msgError{height:28px;display:block;background:#FFE8DF;line-height:28px;text-align:center;font-size:14px;color:#d00;margin-bottom:15px;}
+.contactForm{padding:0 30px;margin-top:30px;float:left;}.contactForm .line{width:100%;min-height:30px;float:left;margin-bottom:15px;}.contactForm .line.center{text-align:center;}
+.contactForm .line.margin_sumbit{margin-top:10px;}
+.contactForm .line .halfLine{width:48%;float:left;}
+.contactForm .line.limited_height{max-height:50px;}
+.contactForm .line .thirdLine_plus{width:62%;float:left;margin-right:3.5%;}
+.contactForm .line .thirdLine{width:31%;float:left;margin-right:3.5%;}
+.contactForm .line .quarterLine{width:22%;float:left;margin-right:4%;}
+.contactForm .line label{display:block;margin:0 5px 5px 0;color:#0253AC;}
+.contactForm .line input[type='text'],.contactForm .line input[type='email'],.contactForm .line input[type='password'],.contactForm .line input[type='tel'],.contactForm .line input[type='datetime'],.contactForm .line input[type='email'],.contactForm .line input[type='number'],.contactForm .line textarea,.contactForm .line select{width:100%;font-family:Arial,Helvetica,sans-serif;}
+.contactForm .line::-webkit-input-placeholder{color:#999;}
+.contactForm .line input:-moz-placeholder{color:#999;}
+.contactForm .line::-moz-placeholder{color:#999;}
+.contactForm .line :-ms-input-placeholder{color:#999;}
+.contactForm .line .guion{width:10%;line-height:28px;float:left;text-align:center;}
+.contactForm .error{position:relative;z-index:1;}.contactForm .error input[type='text'],.contactForm .error input[type='email'],.contactForm .error input[type='password'],.contactForm .error input[type='tel'],.contactForm .error input[type='datetime'],.contactForm .error input[type='email'],.contactForm .error input[type='number'],.contactForm .error textarea,.contactForm .error select{border:1px solid #FF7373;}
+.contactForm .error .errorBubble{width:30px;height:24px;position:absolute;z-index:1;right:3px;bottom:3px;background:url(../img/alert_error.png) no-repeat;}
+.contactForm.inlineForm label{float:left;line-height:28px;margin-bottom:0px;}
+.contactForm.inlineForm input[type='text'],.contactForm.inlineForm input[type='email'],.contactForm.inlineForm input[type='password'],.contactForm.inlineForm input[type='tel'],.contactForm.inlineForm input[type='datetime'],.contactForm.inlineForm input[type='email'],.contactForm.inlineForm input[type='number'],.contactForm.inlineForm textarea,.contactForm.inlineForm select{float:right;}
+.contactForm.inlineForm .line.strict label{width:20%;text-align:right;}
+.contactForm.inlineForm .two_row{line-height:16px;}
+input[type='text'],input[type='email'],input[type='password'],input[type='tel'],input[type='datetime'],input[type='email'],input[type='number'],textarea,select{height:30px;width:100%;float:left;box-sizing:border-box;-moz-box-sizing:border-box;-webkit-box-sizing:border-box;-webkit-border-radius:5px;-moz-border-radius:5px;-ms-border-radius:5px;-o-border-radius:5px;border-radius:5px;padding:0 7px;background:#f9f9f9;border:1px solid #ccc;}input[type='text'].xSmall,input[type='email'].xSmall,input[type='password'].xSmall,input[type='tel'].xSmall,input[type='datetime'].xSmall,input[type='email'].xSmall,input[type='number'].xSmall,textarea.xSmall,select.xSmall{width:15% !important;}
+input[type='text'].small,input[type='email'].small,input[type='password'].small,input[type='tel'].small,input[type='datetime'].small,input[type='email'].small,input[type='number'].small,textarea.small,select.small{width:25% !important;}
+input[type='text'].medium,input[type='email'].medium,input[type='password'].medium,input[type='tel'].medium,input[type='datetime'].medium,input[type='email'].medium,input[type='number'].medium,textarea.medium,select.medium{width:40% !important;}
+input[type='text'].large,input[type='email'].large,input[type='password'].large,input[type='tel'].large,input[type='datetime'].large,input[type='email'].large,input[type='number'].large,textarea.large,select.large{width:50% !important;}input[type='text'].large.for_date,input[type='email'].large.for_date,input[type='password'].large.for_date,input[type='tel'].large.for_date,input[type='datetime'].large.for_date,input[type='email'].large.for_date,input[type='number'].large.for_date,textarea.large.for_date,select.large.for_date{width:48% !important;margin:0 1%;}
+input[type='text'].xLarge,input[type='email'].xLarge,input[type='password'].xLarge,input[type='tel'].xLarge,input[type='datetime'].xLarge,input[type='email'].xLarge,input[type='number'].xLarge,textarea.xLarge,select.xLarge{width:75% !important;}
+input[type='text']:focus,input[type='email']:focus,input[type='password']:focus,input[type='tel']:focus,input[type='datetime']:focus,input[type='email']:focus,input[type='number']:focus,textarea:focus,select:focus{border-color:#36A9E1 !important;box-shadow:inset 2px 2px 2px 0px rgba(54, 169, 225, 0.2);-moz-box-shadow:inset 2px 2px 2px 0px rgba(54, 169, 225, 0.2);-webkit-box-shadow:inset 2px 2px 2px 0px rgba(54, 169, 225, 0.2);}
+select{height:auto;padding:5px 7px;color:#555;text-align:center;}
+textarea{height:150px;resize:none;padding:7px;}
+.checkboxLine{width:100%;float:left;position:relative;padding-left:32px;line-height:29px;font-size:13px;}.checkboxLine .checkbox{width:18px;height:18px;float:left;position:absolute;left:0px;top:0px;z-index:2;background:url(../img/checkbox.png) left top no-repeat;margin-right:7px;cursor:pointer;}.checkboxLine .checkbox.check{background:url(../img/checkbox.png) right top no-repeat;}
+.margin_form{margin-left:130px;}
+.for_checkbox{padding-left:26px;color:#949798;}.for_checkbox a{color:#004684;}
+.radioLine{height:22px;float:left;position:relative;margin:6px 0 0;padding-left:26px;line-height:22px;font-size:13px;}.radioLine .radio{width:16px;height:16px;float:left;position:absolute;left:0px;top:0px;z-index:2;background:url(../img/radio.png) left top no-repeat;margin-right:7px;cursor:pointer;}.radioLine .radio.radioCheck{background:url(../img/radio.png) right top no-repeat;}
+.center{margin:0 auto;clear:both;display:block;text-align:center;}

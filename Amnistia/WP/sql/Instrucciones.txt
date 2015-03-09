@@ -1,0 +1,9 @@
+Al momento de impotar una base de datos de otro servidor (ya sea local o producción),
+se debe buscar y reemplazar la URL que aparece por defecto, que viene siendo la misma
+URL que aparece como valor en el campo "siteurl" dentro de la tabla "wp_option" (puede
+que la tabla cambie de prefijo 'wp_' según el desarrollador).
+
+Para buscar y reemplazar rápidamente, se puede utilizar la siguiente herramienta,
+colocando los nuevos datos de la base de datos, y luego copiando y pegando el resultado
+dentro de la base de datos como consulta SQL:
+http://dev.didigital.cl/didigital/sql-sentences/

@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>Maratón de Cartas 2014 | Amnistía Internacional</title>
+        <link href='http://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,400,300,600,700' rel='stylesheet' type='text/css'>
+        <link rel="stylesheet" href="css/style.css">
+        <script src="js/jquery-1.11.1.min.js"></script>
+        <script src="js/template.js"></script>
+        <script src="js/mobile.js"></script>
+        <meta name="viewport" content="width=device-width; initial-scale=1.0; maximum-scale=1.0;"> 
+        <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+        <!--[if lt IE 9]>
+<script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+<script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+<![endif]-->
+        <meta name="description" content="Únete a cientos de miles de personas de todo el mundo y actú a favor de víctimas de violaciones de derechos humanos."/>
+        <meta name="keywords" content="amnistia, derechos humanos, maraton firmas, maraton cartas, peticiones, libertad"/>
+        <meta property="og:locale" content="es_ES" />
+        <meta property="og:type" content="website" />
+        <meta property="og:title" content="Escibre una carta, Cambia una vida | Amnistia" />
+        <meta property="og:description" content="Únete a cientos de miles de personas de todo el mundo y actú a favor de víctimas de violaciones de derechos humanos." />
+        <meta property="og:url" content=":::COLOCAR RUTA FINAL::: img/facebook_img.jpg" />
+        <meta property="og:site_name" content="Maratón de Cartas 2014" />
+    </head>
+    <body>
+        <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}(document, 'script', 'twitter-wjs');</script>
+        <div id="fb-root"></div>
+        <script>(function(d, s, id) {
+    var js, fjs = d.getElementsByTagName(s)[0];
+    if (d.getElementById(id)) return;
+    js = d.createElement(s); js.id = id;
+    js.src = "//connect.facebook.net/es_ES/sdk.js#xfbml=1&version=v2.0";
+    fjs.parentNode.insertBefore(js, fjs);
+}(document, 'script', 'facebook-jssdk'));</script>
+
+        <div class="contenido"></div>
+        <template data-ref="header" data-url="header.html"></template>
+        {{contenido}}    
+        <template data-ref="footer" data-url="footer.html"></template>
+    </body>
+</html>

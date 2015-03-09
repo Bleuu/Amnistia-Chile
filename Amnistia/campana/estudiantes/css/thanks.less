@@ -1,0 +1,139 @@
+@font-face { 
+    font-family: 'Gbold';
+    src: url(../fonts/AmnestyTradeGothic-BdCn20.ttf);
+}
+@font-face { 
+    font-family: 'Gnormal';
+    src: url(../fonts/AmnestyTradeGothic-Cn18.ttf);
+}
+@font-face { 
+    font-family: 'Gcon';
+    src: url(../fonts/AmnestyTradeGothic-BdCn20.ttf);
+}
+
+.bold{
+    font-variant-ligatures: common-ligatures;
+    font-variant-ligatures: "liga";
+    font-family: 'Gbold';
+}
+.normal{
+    font-variant-ligatures: common-ligatures;
+    font-variant-ligatures: "liga";
+    font-family: 'Gnormal';
+}
+.con{
+    font-variant-ligatures: common-ligatures;
+    font-variant-ligatures: "liga";
+    font-family: 'Gcon';
+}
+
+@fontSize: 18px;
+@fontSizeBase: 18px;
+
+@amarillo: #FFFF00;
+
+.font(@f:20){
+    font-size: @f / @fontSizeBase * 1em;
+}
+html, body{
+    background: #66605C;
+    text-align: center;
+    margin: 0;
+    font-size: @fontSizeBase;
+    .normal;
+}
+a{
+    color: black;
+}
+figure{
+    padding: 0;
+    margin: 0;
+}
+img{
+    margin: 0;
+    line-height: 1;
+    width: auto;
+    height: auto;
+    max-width: 100%;
+}
+header, section{
+    width: 1000px;
+    display: block;
+    margin: 0 auto;
+    color: white;
+    min-width: 320px - 40;
+}
+header{
+    figure{
+        max-height: 300px;
+        overflow: hidden;
+        img{
+            display: block;
+            width: 100%;
+        }
+    }
+}
+.layer, footer, section{
+    padding-left: 20px;
+    padding-right: 20px;
+}
+h1{
+    .font(140);
+    margin: 0 0 20px;
+    color: #ff0;
+}
+p{
+    .font(27);
+    margin: 0;
+    text-transform: uppercase;
+    display: block;
+}
+.impo{
+    .font(40); 
+    background: #ff0;
+    color: #fff;
+    padding: 10px;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    width: 300px;
+    margin: 20px auto;
+    .bold;
+    display: block;
+    text-decoration: none;
+    text-transform: uppercase;
+}
+
+.franja{
+    background: @amarillo;
+    color: black;
+    .bold;
+    p{
+        margin: 0;
+        .font(41);
+        .big{
+            font-size: 1.27em;
+        }
+    }
+}
+
+
+footer{
+    border-bottom: 10px solid black;
+    margin-top: 100px;
+    figure{
+        padding: 20px 0;
+    }
+}
+
+@media all and (max-width:768px){
+    html, body{
+        font-size: 12px;
+    }
+}
+
+@media all and (max-width:480px){
+    h1{
+        font-size: 4em;
+    }
+}
